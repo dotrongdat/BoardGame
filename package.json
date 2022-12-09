@@ -1,0 +1,65 @@
+{
+  "name": "maskstorebe",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "start_dev": "nodemon ./src/index.js",
+    "run-bundle": "nodemon ./dist/bundle.js",
+    "run-webpack": "webpack --mode development --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotrongdat/MaskStoreBE.git"
+  },
+  "author": "DATDT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotrongdat/MaskStoreBE/issues"
+  },
+  "homepage": "https://github.com/dotrongdat/MaskStoreBE#readme",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "async": "^3.2.4",
+    "babel-plugin-istanbul": "^6.1.1",
+    "bcryptjs": "^2.4.3",
+    "bull": "^4.8.5",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "date-format": "^4.0.13",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "firebase": "^9.8.1",
+    "firebase-admin": "^10.3.0",
+    "helmet": "^5.1.1",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "miliseconds": "^3.0.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.2.9",
+    "nodemailer": "^6.7.7",
+    "redis": "^4.2.0",
+    "rotating-file-stream": "^3.0.4",
+    "socket.io": "^4.5.1",
+    "twilio": "^3.80.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "nodemon": "^2.0.19",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

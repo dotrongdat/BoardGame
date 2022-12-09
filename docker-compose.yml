@@ -1,0 +1,28 @@
+version: "3"
+services:
+  cache:
+    image: redis
+    restart: always
+    # ports:
+    #   - 6379:6379
+    # expose:
+    #   - 6379
+    # networks:
+    #   - mask-store
+  mask-store-be:
+    # image: node:18
+    build: .
+    volumes: 
+      - .:/usr/src/app
+    # working_dir: /usr/src/app
+    # command: bash -c "npm install && npm run start"
+    ports:
+      - 3001:3001
+    # networks:
+    #   - mask-store
+    environment:
+      REDIS_URL: redis://cache:6379
+    depends_on:
+      - cache
+# networks:
+#   mask-store:
